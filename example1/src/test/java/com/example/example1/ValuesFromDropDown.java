@@ -20,7 +20,7 @@ public void workWithDropDown() throws InterruptedException {
 		
 		//System.out.println(driver.findElements(By.linkText("English (US)")).size());
 		
-	/*	WebElement monthDrop = driver.findElement(By.id("month"));
+	/*WebElement monthDrop = driver.findElement(By.id("month"));
 		
 		List<WebElement> months = monthDrop.findElements(By.tagName("option"));
 		for(int i=0; i<months.size(); i++){
