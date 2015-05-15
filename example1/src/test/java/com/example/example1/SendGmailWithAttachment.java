@@ -20,12 +20,14 @@ public class SendGmailWithAttachment {
 	@Test
 	public void test() throws InterruptedException, AWTException {
 		
+		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.gmail.com");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
 		driver.findElement(By.id("Email")).sendKeys("testviawebdriver@gmail.com");
+		driver.findElement(By.id("next")).click();
 		driver.findElement(By.id("Passwd")).sendKeys("9663096630");
 		driver.findElement(By.id("signIn")).click();
 		Thread.sleep(4000);

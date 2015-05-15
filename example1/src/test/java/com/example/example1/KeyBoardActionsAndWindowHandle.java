@@ -42,7 +42,7 @@ public class KeyBoardActionsAndWindowHandle {
 		System.out.println(hndl);*/
 		
 		for(String hnd:handles){ //loop through each handle
-			//check if the handle is not parent
+			//check if the handle is not parentKK
 			if(!hnd.equals(handle)){
 				driver.switchTo().window(hnd);	//change the control to second window
 			}
